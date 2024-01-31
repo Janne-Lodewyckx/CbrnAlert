@@ -1,8 +1,42 @@
-<div>
-  <div class="pb-3 font-medium"> Please choose the required ATP-45 category: </div>
+
+<div class="pb-3 font-medium"> Please choose the required ATP-45 category: </div>
+<div class="form-container">
+  
+  <div class="form-fields-container">
+    <mat-form-field class="field">
+      <mat-label>Category</mat-label>
+      <mat-select [(value)]="selected" [formControl]="disableProcedure">
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Option 1</mat-option>
+        <mat-option value="option2">Option 2</mat-option>
+        <mat-option value="option3">Option 3</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="field">
+      <mat-label>Procedure</mat-label>
+      <mat-select [(value)]="selected" [formControl]="disableProcedure">
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Option 1</mat-option>
+        <mat-option value="option2">Option 2</mat-option>
+        <mat-option value="option3">Option 3</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 
   <div
   class = "bg-white rounded-lg border border-gray-200 w-full text-gray-900"
   *ngFor="let item of children; let i = index">
     <app-list-item [item]="item" (click)="select(i)"></app-list-item>
   </div>
+  -->
 </div>

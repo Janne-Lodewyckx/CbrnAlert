@@ -20,6 +20,12 @@ import { TabComponent, TabsComponent } from 'src/app/shared/tabs/tabs.component'
 import { FieldsetComponent } from 'src/app/shared/form/fieldset/fieldset.component';
 import { ArchiveComponent } from './archive/archive.component';
 
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
+
 @NgModule({
   declarations: [CaseSelectionComponent, ListItemComponent, SelectionListComponent, MeteoFormComponent, WindFormComponent, Atp45RunComponent, StabilityFormComponent, ReleaseLocationsFormComponent, ArchiveComponent],
   imports: [
@@ -33,6 +39,10 @@ import { ArchiveComponent } from './archive/archive.component';
     TabComponent,
     FieldsetComponent,
     SharedModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatOptionModule,
   ],
   providers: [
     Atp45ApiService
