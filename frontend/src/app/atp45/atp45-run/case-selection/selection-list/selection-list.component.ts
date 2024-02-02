@@ -28,6 +28,7 @@ export class SelectionListComponent {
 
   select(event:number) {
     console.log(event)
+    console.log(this.children)
     this.selected.emit(event)
   }
 }
