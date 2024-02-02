@@ -15,25 +15,12 @@ export class SelectionListComponent {
 
   // You can subscribe to changes in the selectedCategory and update the disableProcedure control accordingly
   ngOnInit() {
-     // Subscribe to changes in the selectedCategory
-     this.disableProcedure.valueChanges.subscribe((value) => {
-      // Update the disableProcedure control based on the selectedCategory
-      if (this.selectedCategory === 'option2') {
-        this.disableProcedure.setValue(true);
-      } else {
-        this.disableProcedure.setValue(false);
-      }
-    });
+     
   }
 
    // Function to handle changes in the selectedCategory
    onCategoryChange() {
-    // Update the disableProcedure control based on the selectedCategory
-    if (this.selectedCategory === 'option2') {
-      this.disableProcedure.setValue(true);
-    } else {
-      this.disableProcedure.setValue(false);
-    }
+    
   }
 
   @Input() children: Atp45DecisionTree[]

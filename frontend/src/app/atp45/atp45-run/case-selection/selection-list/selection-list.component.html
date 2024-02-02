@@ -7,7 +7,7 @@
       <mat-label>Category</mat-label>
       <mat-select [(value)]="selected">
         <mat-option>None</mat-option>
-        <mat-option value="option1" (click)="select(1)">Option 1</mat-option>
+        <mat-option value="option1" (click)="select(0)">Option 1</mat-option>
         <mat-option value="option2" (click)="select(2)">Option 2</mat-option>
         <mat-option value="option3">Option 3</mat-option>
       </mat-select>
@@ -16,7 +16,7 @@
       <mat-label>Procedure</mat-label>
       <mat-select [(value)]="selected" [formControl]="disableProcedure">
         <mat-option>None</mat-option>
-        <mat-option value="option1">Option 1</mat-option>
+        <mat-option value="option1" (click)="select(0)">Option 1</mat-option>
         <mat-option value="option2">Option 2</mat-option>
         <mat-option value="option3">Option 3</mat-option>
       </mat-select>
