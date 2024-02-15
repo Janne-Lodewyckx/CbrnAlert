@@ -16,3 +16,6 @@ julia +1.7 --project setup.jl
 
 openssl genrsa -out config/private.pem 2048
 openssl rsa -in config/private.pem -out config/public.pem -outform PEM -pubout
+
+
+#im here
